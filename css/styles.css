@@ -1,0 +1,289 @@
+/*estilos contacto*/
+/*titulos*/
+/*body*/
+/*block-comienzosDelaBanda-*/
+/*estilos discos*/ /*titulos*/
+/*body*/
+/*block-comienzosDelaBanda-*/
+/*estilos comienzos de la banda*/
+/*titulos*/
+/*body*/
+/*block-comienzosDelaBanda-*/
+/*estilos proximos shows*/
+/*titulos*/
+/*body*/
+/*block-comienzosDelaBanda-*/
+/*titulos*/
+/*body*/
+/*block-comienzosDelaBanda-*/
+body {
+  width: 100%;
+  background-image: url(../img/fondo.jpg);
+  width: 100%;
+  color: white;
+  font-family: "Bahnschrift", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "titulo" "navegacion" "lista" "video" "footer";
+}
+
+.titulo {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  margin: 15px;
+}
+
+.lista {
+  grid-area: lista;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+.lista .list__section {
+  margin-top: 20px;
+  display: flex;
+  gap: 14%;
+  margin-left: 30px;
+  justify-content: center;
+}
+.lista .list__section .list__title {
+  list-style: none;
+  font-weight: bold;
+}
+.lista .list__section .list__title .list__options {
+  margin: 12px;
+  list-style: circle;
+  margin-left: 100px;
+}
+.lista .list__section .list__title .list__options .list__item {
+  font-weight: normal;
+}
+
+@media (max-width: 576px) {
+  .list__section {
+    gap: 2%;
+    margin-left: -12px;
+  }
+}
+@media (max-width: 776px) {
+  .list__section {
+    gap: 8%;
+    margin-left: 1px;
+  }
+}
+@media (min-width: 992px) {
+  .list__section {
+    gap: 26%;
+    margin-left: 1px;
+  }
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-area: lista;
+  }
+  .lista {
+    display: flex;
+    justify-content: right;
+  }
+}
+.container {
+  grid-area: video;
+  display: flex;
+}
+.container iframe {
+  max-width: 100%;
+}
+.container p {
+  display: flex;
+  width: 400px;
+  height: auto;
+  margin: 18px;
+  padding: 18px;
+  border-radius: 12px;
+  float: right;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+/****GRID FIRST MOBILE CONTACTO****/
+#contacto {
+  display: grid;
+  grid-template-areas: "nav" "cabecera" "formulario" "footer";
+}
+
+#cabecera {
+  grid-area: cabecera;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 25px;
+}
+
+#formulario {
+  grid-area: formulario;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.formulario__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+}
+
+.block__description {
+  font-size: 20px;
+  color: black;
+  width: 480px;
+  height: auto;
+  margin: 15px auto;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: rgba(42, 42, 238, 0.418);
+}
+
+@media (max-width: 767px) {
+  .block {
+    display: block;
+    height: auto;
+    width: auto;
+  }
+  .block__description {
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+}
+.table {
+  margin: 30px;
+  width: 95%;
+  height: auto;
+}
+.table th {
+  color: red;
+}
+.table td {
+  color: white;
+}
+
+.fondo-gradiente {
+  background: linear-gradient(to top, blue, black);
+}
+
+.bg-light {
+  background-color: #000080 !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.logo {
+  height: 35px;
+  width: 35px;
+}
+
+.form {
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+}
+
+.cardss {
+  display: flex;
+  justify-content: center;
+}
+.cardss .card {
+  background-color: #141414;
+  border: solid 5px red;
+  margin: 20px;
+}
+.cardss .card img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.cardss .card h5 {
+  color: red;
+  font-family: red;
+}
+.cardss .card a {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.roto {
+  display: flex;
+  justify-content: center;
+  margin-top: 131px;
+}
+
+.margen {
+  margin-top: 60px;
+}
+
+#navbarNavDropdown {
+  margin-right: 20px;
+  justify-content: flex-start;
+}
+
+.roto2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 247px;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: red;
+  margin-top: -6px;
+}
+
+/*# sourceMappingURL=styles.css.map */
