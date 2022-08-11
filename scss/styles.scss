@@ -165,31 +165,6 @@ body {
     align-items: center;
 }
 
-.block__description{
-    font-size: 20px;
-        color:$color-letras;
-        width: 480px;
-        height: auto;
-        margin: 15px auto;
-        padding: 18px;
-        border-radius: 12px;
-        background-color: $background-block;
-    }
-
-@media (max-width: 767px) {
-    .block {
-        display: block;
-        height: auto;
-        width: auto;
-    }
-
-    .block__description {
-        display: flex;
-        width: auto;
-        height: auto;
-    }
-}
-
 .table{
     margin: 30px;
     width: 95%;
@@ -233,12 +208,6 @@ td{
     align-items: center;
 }
 
-.footer1 {
-    display: flex;
-    justify-content: center;
-    margin-top: 58px;
-}
-
 .cardss {
     display: flex;
     justify-content: center;
@@ -271,6 +240,13 @@ td{
     }
 }
 
+
+.footer1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+}
+
 .footer2 {
     display: flex;
     justify-content: center;
@@ -283,6 +259,12 @@ td{
     margin-top: 131px;
 }
 
+.roto2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 247px;
+}
+
 .margen {
     margin-top: 60px;
 }
@@ -292,17 +274,93 @@ td{
     justify-content: flex-start;
 }
 
-.roto2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 247px;
-}
-
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
     font-family:$fuente-titulos;
     font-size: 20px;
     color:$color-titulos;
     margin-top: -6px;
+}
+
+
+
+
+@mixin tamano ($ancho,$alto){
+    height: $alto;
+    width: $ancho;
+}
+
+.block{
+    @include tamano (auto,480px);
+        color:$color-letras;
+        margin: 15px auto;
+        padding: 18px;
+        border-radius: 12px;
+        font-size: $fuente-principal;
+}
+
+.block__description{
+    @include tamano (auto,480px);
+        width: 480px;
+        height: auto;
+        margin: 15px auto;
+        padding: 18px;
+        border-radius: 12px;
+        background-color: $background-block;
+    }
+
+@media (max-width: 767px) {
+    .block {
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .block__description {
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+}
+
+
+$estilos:(
+    color:black,
+    fuente:"Bahnschrift", sans-serif
+    padding:10px 20px 10px 20px,
+    borderRadius:0.25rem
+);
+
+.btn{
+    border-radius:map-get($estilos,borderRadius);
+    font-family:map-get($estilos,fuente);
+    color:map-get($estilos,color);
+    font-size: 15px;
+    padding:map-get($estilos,padding);
+    text-decoration: none;
+    background: transparent;
+
+
+    
+        .btn-borrar{
+            @extend .btn;
+            color: #dc3545;
+            border-color: #dc3545;
+        
+            .btn-borrar:hover { 
+                background-color: #dc3545;
+            }
+        }
+        
+        .btn-enviar{
+            @extend .btn;
+            color: #198754;
+            border-color:#198754;
+        
+            .btn-enviar:hover { 
+                background-color: #198754;
+            }
+        }
+        
 }
 
