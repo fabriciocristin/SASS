@@ -118,17 +118,76 @@ body {
     }
 }
 
-.footer {
-    grid-area: footer;
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
+
+.footer-basic {
+    padding: 40px 0;
+    margin-top: 40px;
+    background-color: black;
+    color: #4b4c4d;
+    margin-bottom: 0;
+    position: relative;
+    padding-bottom: 2rem;
+    min-height: 35vh;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
 }
 
 .negrita {
     font-weight: bold;
 }
-
 /****GRID FIRST MOBILE CONTACTO****/
 #contacto {
     display: grid;
@@ -180,11 +239,7 @@ td{
 }
 
 .fondo-gradiente {
-    background: linear-gradient(to top, blue, black);
-}
-
-.bg-light {
-    background-color: #000080 !important;
+    background: linear-gradient(to top, #2d2d2d, black);
 }
 
 .navbar-light .navbar-nav .nav-link.active,
@@ -240,35 +295,6 @@ td{
     }
 }
 
-
-.footer1 {
-    display: flex;
-    justify-content: center;
-    margin-top: 58px;
-}
-
-.footer2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-}
-
-.roto {
-    display: flex;
-    justify-content: center;
-    margin-top: 131px;
-}
-
-.roto2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 247px;
-}
-
-.margen {
-    margin-top: 60px;
-}
-
 #navbarNavDropdown {
     margin-right: 20px;
     justify-content: flex-start;
@@ -282,8 +308,17 @@ td{
     margin-top: -6px;
 }
 
+.bg-light{
+    background-color: black !important;
+}
 
+.navbar-light .navbar-toggler-icon{
+    background-image: url(../img/navvv.png);
+}
 
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: red;}
 
 @mixin tamano ($ancho,$alto){
     height: $alto;
@@ -331,7 +366,7 @@ $estilos:(
     borderRadius:0.25rem
 );
 
-.btn{
+.btnn{
     border-radius:map-get($estilos,borderRadius);
     font-family:map-get($estilos,fuente);
     color:map-get($estilos,color);
@@ -343,7 +378,7 @@ $estilos:(
 
     
         .btn-borrar{
-            @extend .btn;
+            @extend .btnn;
             color: #dc3545;
             border-color: #dc3545;
         
@@ -353,7 +388,7 @@ $estilos:(
         }
         
         .btn-enviar{
-            @extend .btn;
+            @extend .btnn;
             color: #198754;
             border-color:#198754;
         
@@ -364,3 +399,56 @@ $estilos:(
         
 }
 
+.imagen-comienzo{
+    text-align: center;
+
+    img{
+        width: 45%;
+        
+        border-radius:12px ;
+    }
+
+    p{
+        
+        display: flex;
+        margin: 20px;
+        width: auto;
+        height: auto;
+        
+        
+    }
+}
+
+
+
+.banda{
+    display: flex;
+    justify-content: center;
+
+    div{
+        margin: 15px;
+        background: transparent;
+
+
+    img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            height: 150px;
+            width: 150px;
+    }
+    
+    p{
+        margin: 10px;
+        text-align: center;
+    }
+    }
+}    
+
+#carouselExampleSlidesOnly{
+    img{
+        width: auto;
+        height: 500px;
+    }
+}
