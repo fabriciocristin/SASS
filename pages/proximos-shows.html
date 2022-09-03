@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="banda,vintage,banda de rock,shows,fechas">
     <meta name="description" content="en esta seccion podran ver las proximas fechas de nuestros shows">
-    <link rel="icon"href="../img/favicon.ico">
+    <link rel="icon" href="../img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Vintage| Proximos shows</title>
 </head>
@@ -63,7 +64,7 @@
     </header>
 
     <h1 class="titulo margen">Tour 2022</h1>
-    <table class="table table-bordered " >
+    <table class="table table-bordered ">
         <thead>
             <tr>
                 <th scope="col">Fecha</th>
@@ -94,23 +95,39 @@
         </tbody>
     </table>
 
-<h4 class="titulo">Shows</h4>
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="../img/carousel1.jfif" alt="First slide">
+    <h4 class="titulo">Shows</h4>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="../img/carousel 2.jfif" alt="Second slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/priimera.jpg" class="d-block w-100" alt="Show en vivo">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/segunda.jpg" class="d-block w-100" alt="Primera plana cantante">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/tercera.jpg" class="d-block w-100" alt="Banda completa">
+            </div>
         </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="../img/carousel 3.jfif" alt="Third slide">
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </div>
-</div>
-
-
-
 
 
     <div class="footer-basic">
@@ -119,7 +136,7 @@
                 <a href="#"><img src="/img/facebook.png"></a>
                 <a href="#"><img src="/img/instagram.png"></i></a>
                 <a href="#"><img src="/img/twitter.png"></a>
-                
+
             </div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Home</a></li>
@@ -131,7 +148,9 @@
             <p class="copyright">Vintage © 2020</p>
         </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 
 </body>
 
